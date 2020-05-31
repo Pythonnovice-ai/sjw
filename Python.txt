@@ -1,0 +1,1086 @@
+Python Basic Output Tutorial
+
+
+Your name
+print("Darth Vader")
+That was interesting
+print("That was interesting")
+That was “interesting”
+print("That was "interesting"")
+
+print("That was \"interesting\"")
+
+
+
+
+print("The sentence below is true.")
+print("The sentence above is false.")
+
+
+
+
+print("^..^      /")
+print("/_/\_____/")
+print("   /\ /\\")
+print("  / \ / \\")
+
+
+
+
+
+
+
+Python Variables Tutorial
+
+
+
+“fake quote generator”
+
+verb = "bin"
+noun_singular = "ein Berliner"
+famous_person = "John F. Kennedy"
+print("Ich " + verb + " " + noun_singular + ".")
+print("- " + famous_person)
+
+
+Ich bin ein Berliner.
+- John F. Kennedy
+
+
+
+
+huge_number = "900"
+cheap_item = "paperclip"
+famous_person = "King Henry VIII"
+print("I once bought a " + cheap_item + " for " + huge_number + " dollars. Best money I ever spent.")
+print("- " + famous_person)
+animal_plural = "turtles"
+famous_person = "Chinese Proverb"
+print("I would not be the person I am today had I not been raised by " + animal_plural + ".")
+print("- " + famous_person)
+
+
+
+I once bought a paperclip for 900 dollars. Best money I ever spent.
+- King Henry VIII
+I would not be the person I am today had I not been raised by turtles.
+- Chinese Proverb
+
+
+
+Python Basic Input 1
+
+
+verb = input("Type a verb and press [enter]")
+noun_singular = input("Type a singular noun and press [enter]")
+famous_person = input("Type the name of a famous person and press [enter]")
+print("Ich " + verb + " " + noun_singular + ".")
+print("- " + famous_person)
+
+
+
+Type a verb and press [enter] bin
+Type a singular noun and press [enter] ein Berliner
+Type the name of a famous person and press [enter] John F Kennedy
+Ich bin ein Berliner.
+- John F Kennedy
+
+
+
+huge_number = input("Write a HUGE number, then press [enter]")
+cheap_item = input("What's a cheap item?")
+famous_person = input("Tell me the name of a famous person.")
+print("I once bought a " + cheap_item + " for " + huge_number + " dollars. Best money I ever spent.")
+print("- " + famous_person)
+
+
+Write a HUGE number, then press [enter] 900
+What's a cheap item? papercliip
+Tell me the name of a famous person. Merlin
+I once bought a papercliip for 900 dollars. Best money I ever spent.
+- Merlin
+
+
+
+
+https://www.educba.com/python-literals/
+https://scratch.mit.edu/projects/393773907/editor
+https://teachcomputerscience.com/gcse-python/basic-input/
+https://www.bbc.co.uk/bitesize/guides/zb3yb82/revision/5
+
+
+
+
+BASICS 26052020
+
+Introduction to Python
+
+Got to be in order, otherwise it wont print in order / answer the orders in the correct order
+
+
+Variables:
+
+'hello world' is a string
+every type of number is numbers data
+numbers could be strings 
+'twenty' '20'  if it is written as a text format you cannot perform calculations
+Boolean data is true and false
+
+
+output (defining variables and strings, numbers)
+
+person_name = "Mr Tom"
+object_1 = "car"
+object_1_colour = "red"
+object_name_2 = "duplex"
+object_2_age = "10 years old"
+
+print("Hello, " + person_name)
+print("I am very interested in your " + object_1 + " is it " + object_1_colour)
+print("Also " + person_name + " is your " + object_name_2 + " older than " + object_2_age)
+print("thank you " + person_name)
+
+person_name = "Mr Wigglesworth"
+object_1 = "bicycle"
+object_1_colour = "silver"
+object_name_2 = "apartment"
+object_2_age = "10 years old"
+
+print("Hello, " + person_name)
+print("I am very interested in your " + object_1 + " is it " + object_1_colour)
+print("Also " + person_name + " is your " + object_name_2 + " older than " + object_2_age)
+print("thank you " + person_name)
+
+
+Boolean 
+
+
+
+having_house=True
+if having_house:
+    print("I own a small house")
+
+
+having_house=False
+if having_house:
+    print("I own a small house")
+
+
+
+
+String manipulation
+
+print("I love pizza")
+sentence="I love pizza and nachos" <--- this is the variable
+print(sentence) 
+
+
+Functions
+
+sentence="I LOVE PIZZA AND NACHOS"
+print(sentence.upper())
+
+sentence="I LOVE PIZZA AND NACHOS"
+print(sentence.lower())
+
+sentence="I LOVE PIZZA AND NACHOS"
+print(sentence.isupper())
+
+sentence="I LOVE PIZZA AND NACHOS"
+print(sentence.islower())
+
+
+
+sentence="I lOvE pIzZa AnD NaChOs"
+print(sentence.lower().islower()) <---- changing string to all lower case & checking it is all lower case by returning true or false 
+
+
+
+sentence="I lOvE PiZza AnD NaChos"
+print(len(sentence)) <------ app shows you the length of the sentence, here the output is 23 
+
+
+Replace function
+sentence="I lOvE PiZza AnD NaChos"
+print(sentence.replace("PiZza", "SaUsAge"))  <------ ask python to replace one word with another 
+
+Index function
+sentence="I lOvE PiZza AnD NaChos"
+
+print(sentence.index("P"))   <----- finds where P starts in the sentence 
+
+
+
+sentence="I lOvE PiZza AnD NaChos"
+
+print(sentence.index("AnD"))   <----- finds where AnD starts in the string, so in this case letter 13
+
+
+print("I love pizza   \n and nachos   \n and tacos")   <---- this is simply splitting the string of text onto a seperate line underneath
+
+Search on Google for the hundreds of easy functions that you can use 
+
+
+
+
+
+
+8. DIFFERENT NUMBER MANIPULATIONS
+
+
+Python respects the order of operations 
+e.g. BODMAS brackets of division, multiplication, addition, subtraction
+
+
+from math import*
+
+print((((10+10)*3)/98)-20)  <------- answer in app is -19.387755102040817
+
+
+
+from math import*
+
+age=25+10
+
+print("hello, my age is " + str(age))
+
+
+
+
+
+from math import*
+
+
+
+print(max(1, 5, 67, 2, 90, 4, 10))
+
+
+
+
+from math import*
+
+
+
+print(min(1, 5, -67, 2, 90, 4, 10))
+
+
+
+
+from math import*
+
+
+
+print(52/36+pow(5,2))
+
+
+
+
+
+from math import*
+
+
+
+print(round(52/36+pow(5,2)))   <----- asks python to print the rounded number (26), the complete number 
+
+
+from math import*
+
+
+
+print(abs(-round(52/36+pow(5,2))))  <----- gives you the absolute value of a number (-20 = 20) 
+
+print(abs(-round(52/36+pow(5,2))))
+print(sqrt(25))  <----- square root of 25
+
+
+
+from math import*
+
+
+print(ceil(23.99999))  <----- this function returns  24 
+
+
+from math import*
+
+
+print(ceil(23.0001))  <---- so does this !
+
+
+
+from math import*
+
+
+print(floor(23.99999999))   <------- this returns 23 
+
+
+
+
+FACTORIALS
+
+
+from math import*
+
+
+print(factorial(3))  1*2*3  <----- returns factorial of 3 which is  6 
+
+
+
+from math import*
+
+
+print(factorial(100))   1*2*3*4*5*6 <----- returns the factorial of 100, which is a huge number and could bug your system so don't do it 
+
+93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+
+
+
+
+
+
+
+9. INPUT FUNCTION 
+
+
+
+
+age=input("what is your age?")
+
+
+print("my age is" +age)   <------------------  this will return the variable 'what is your age?' you are then to input your age, e.g. 20, and then press return, this will then return 'my age is 20'in the app
+
+
+
+
+
+
+
+name=input("what is your name?")
+
+
+print("my name is" +name)
+
+
+age=input("what is your age?")
+
+
+print("my age is" +age)
+
+
+
+
+
+
+
+
+name=input("what is your name?")
+age=input("what is your age?")
+food=input("what do you want to eat?")    <---- you answer these questions in the app below in python
+
+
+
+
+
+name=input("what is your name?")
+age=input("what is your age?")
+food=input("what do you want to eat?")
+drink=input("what do you want to drink?")
+
+
+print("Hello, my name is " +name+ ", I am " +age+  ", I want to eat "  +food+", I want to drin/k " +drink)
+
+
+
+name=input("what is your name?")
+age=input("what is your age?")
+food=input("what do you want to eat?")
+drink=input("what do you want to drink?")
+holiday=input("where do you want to go on holiday?")
+
+print("Hello, my name is " +name+ ", I am " +age+  ", I want to eat "  +food+", I want to drink " +drink+ ", I want to go to " +holiday)
+
+
+
+
+App for user to input price, quantity and calculate the final price
+
+price_product_1=input("what is the price of product 1?:")
+quantity_product_1=input("what quantity of product 1 will you buy?:")
+price_product_2=input("what is the price of product 2?:")
+quantity_product_2=input("what quantity of product 1 will you buy?:")
+price_product_3=input("what is the price of product 1?:")
+quantity_product_3=input("what quantity of product 1 will you buy?:")
+
+result_product_1=float(price_product_1)*float(quantity_product_1)
+result_product_2=float(price_product_2)*float(quantity_product_2)
+result_product_3=float(price_product_3)*float(quantity_product_3)
+
+
+result=result_product_1+result_product_2+result_product_3
+
+print("your final price is "+str(result))
+
+
+
+
+Practice 2
+
+name_1=input("what is your name?: ")
+name_2=input("what is your name?: ")
+name_3=input("what is your name?: ")
+
+slices_in_the_pizza=input("how many slices are there in the pizza?:")
+price_paid_for_pizza=input("what was the price of the pizza?:")
+
+percentage_eaten_person_1=input(name_1+" what percentage did you eat of the pizza?: ")
+percentage_eaten_person_2=input(name_2+" what percentage did you eat of the pizza?: ")
+percentage_eaten_person_3=input(name_3+" what percentage did you eat of the pizza?: ")
+
+number_of_slices_person_1=float(percentage_eaten_person_1)*float(slices_in_the_pizza)
+number_of_slices_person_2=float(percentage_eaten_person_2)*float(slices_in_the_pizza)
+number_of_slices_person_3=float(percentage_eaten_person_3)*float(slices_in_the_pizza)
+
+price_paid_name_1=float(percentage_eaten_person_1)*float(price_paid_for_pizza)
+price_paid_name_2=float(percentage_eaten_person_2)*float(price_paid_for_pizza)
+price_paid_name_3=float(percentage_eaten_person_3)*float(price_paid_for_pizza)
+
+
+print(name_1+"  has eaten  "+str(number_of_slices_person_1)+"   slices and has paid  "+str(price_paid_name_1)+"$ for his meal")
+print(name_2+"  has eaten  "+str(number_of_slices_person_2)+"   slices and has paid  "+str(price_paid_name_2)+"$ for his meal")
+print(name_3+"  has eaten  "+str(number_of_slices_person_3)+"   slices and has paid  "+str(price_paid_name_3)+"$ for his meal")
+
+
+
+
+SECTION 3
+
+
+Comments
+print("something")                      #this will print the word 'something'
+#this is an additional comment and will not show when you run the app
+
+
+Functions
+
+def love(name):
+    print("I love " +name)
+
+love("pizza")
+
+
+
+you can write the parameters yourself or get the user to input them  using the input function
+
+
+
+
+def pers_1(name):
+    print(name + ": hello how can I help you?")
+
+def pers2_1(food, drink, dessert, name):
+    name=input("what is your name?")
+    food=input("what food do you want to eat?")
+    drink=input("what do you want to drink?")
+    dessert=input("what do you want for dessert?")
+    print(name+ ": I would like "+ food+", I want to drink "+ drink+", I want "+ dessert+" as a dessert")
+
+def pers_1_2(name):
+    print(name+ " : thank you")
+
+pers_1("cashier")
+pers2_1("food", "drink", "dessert", "name")
+pers_1_2("cashier")
+
+
+
+
+remember functions allow you to store calculations, variables, strings, boolean, numbers - use them for anything
+
+
+
+
+
+HOW TO USE THE RETURN STATEMENT
+
+it is a statement that is used to end a certain function 
+
+
+
+def calculation(a,b,c):
+    print(a+b+c)
+    print("this is a calculation")
+    return print(a-b-c)
+    print(a*b/c)
+
+calculation(1,2,3)
+
+
+
+HOW TO USE THE IF STATEMENT PART 1.
+
+
+IF AND
+
+
+
+i_want_to_eat=False
+i_want_to_sleep=False
+
+if i_want_to_eat and i_want_to_sleep:
+    print("lets have a pizza")
+
+else: print("I am good")
+
+
+
+
+
+IF OR
+
+i_want_to_eat=False
+i_want_to_sleep=False
+
+if i_want_to_eat or i_want_to_sleep:
+    print("lets have a pizza")
+
+else: print("I am good")
+
+
+
+IF ELIF ELSE
+
+
+i_want_to_eat=False
+i_want_a_drink=False
+
+if i_want_to_eat:
+    print("lets have a pizza")
+
+elif i_want_a_drink:
+    print("lets have a drink")
+
+else:
+    print("I'm good")
+
+
+
+
+IF NOT
+
+
+i_want_to_eat=False
+i_want_a_drink=True
+
+if not i_want_to_eat:
+    print("I'm good")
+
+
+
+
+i_want_to_eat=True
+i_want_a_drink=False
+
+if not i_want_a_drink:
+    print("I'm good")
+
+
+
+
+var1=5
+var2=5
+var3=5
+
+
+if var1>=var2:
+    print("yes")
+else:
+    print("no")
+
+
+
+
+var1="blue"
+var2="red"
+var3="black"
+var4="yellow"
+
+
+if var1==var2:
+    print("yes it's the same colour")
+else:
+    print("no")
+
+
+
+
+
+
+
+APP FOR CALCULATING  WHO THE RICHEST PERSON IS 
+
+
+
+pers1_name=input("what is your name?")
+pers1_wallet=input("how much money do you have?")
+
+pers2_name=input("what is your name?")
+pers2_wallet=input("how much money do you have?")
+
+pers3_name=input("what is your name?")
+pers3_wallet=input("how much money do you have?")
+
+
+
+if float(pers1_wallet)>float(pers2_wallet) and float(pers1_wallet)>float(pers3_wallet):
+    print(pers1_name+ "  is the richest")
+elif float(pers2_wallet)>float(pers1_wallet) and float(pers2_wallet)>float(pers3_wallet):
+    print(pers2_name+ "  is the richest")
+elif float(pers3_wallet) > float(pers1_wallet) and float(pers3_wallet) > float(pers2_wallet):
+    print(pers3_name + "  is the richest")
+
+
+
+PRACTICING THE IF STATEMENT
+
+
+CREATE AN APP THAT IS A CONVERSATION BETWEEN A USER AND APP ABOUT GOING FOR SOMETHING TO EAT
+
+
+
+def question():
+    rules=input("you need to answer every question with Yes or No, OK? : ")
+    if rules!="yes":
+        return print("try again")
+    else: print("next question")
+    Quest1=input("are you hungry")
+    if Quest1!="yes":
+        return print("ok, then let's go for a walk")
+    else: print("next question")
+    Quest2=input("do you want to eat somewhere? ")
+    if Quest2!="yes":
+        return print("Come eat at my place!")
+    else:print("next question")
+    Quest3=input("do you want to have pizza? ")
+    if Quest3!="yes":
+        return print("lets go for a burger then")
+    else:print("lets go eat a pizza")
+
+
+question()
+
+
+IF STATEMENTS ARE A VERY IMPORTANT PART OF PYTHON
+
+
+
+
+
+
+LISTS
+
+
+variable_1= "apple"
+list_1=["apple", "banana","pineapple", "melon"]      <---- this is called a Python Index
+
+
+print(list_1[3])
+
+
+variable_1= "apple"
+list_1=["apple", "banana","pineapple", "melon", "strawberry", "other"]
+list_1[3]="avocado"
+list_1[2]="tomato"
+print(list_1)
+
+
+variable_1= "apple"
+list_1=["apple", "banana","pineapple", "melon", "strawberry", "other"]
+
+print(list_1[0:6])   <----- prints the full list of items from 0-6 (remember 0 exists as part of the list and would be 'apple' here)
+
+
+A VARIABLE ONLY HAS 1 ELEMENT IN IT (COULD BE BOOLEAN, STRING, NUMBER)
+IN A LIST YOU CAN HAVE NUMBERS, BOOLEAN, STRINGS
+
+
+variable_1= "apple"
+list_1=["apple", "banana","pineapple", "melon", "strawberry", "other"]
+
+print(list_1[2:])
+
+
+
+USING FUNCTIONS WITH LISTS
+
+
+
+food=["hamburger", "pizza", "juice", "fries", "sushi"]
+
+prices=[5.66, 3.92, 7.29, 4.95, 3.20]
+
+food.insert(2,"spaghetti")
+
+food.extend(prices)
+
+
+
+print(food)
+
+
+
+
+
+food=["hamburger", "pizza", "juice", "fries", "sushi", "pizza", "pizza", "juice", "juice", "hamburger"]
+
+prices=[5.66, 3.92, 7.29, 4.95, 3.20]
+
+food.insert(2,"spaghetti")
+
+
+print(food.count("pizza"))
+
+
+IF YOU USE CAPITAL LETTERS IT WON'T COUNT TGHE NUMBER FOR YOU
+
+
+
+food=["hamburger", "pizza", "juice", "fries", "sushi", "pizza", "pizza", "juice", "juice", "hamburger", "sushi"]
+
+prices=[5.66, 3.92, 7.29, 4.95, 3.20]
+
+food.insert(2,"spaghetti")
+
+random=food.copy()+prices.copy()
+print(random)
+
+
+
+DIFFERENCE BETWEEN LISTS & TUPLES
+
+list=["red", "blue", "yellow"]
+
+list.insert(2, "pink")
+
+print(list)
+
+
+
+
+ LISTS SHOULD BE USED FOR VARIABLES, TUPLES FOR COORDINATES / IP ADDRESSES WHICH DON'T CHANGE 
+
+
+colours=("blue", "yellow", "red")
+
+
+shapes=("square", "triangle", "circle")
+
+
+list=colours+shapes
+
+print(list)
+
+
+
+
+
+
+colours=("blue", "yellow", "red")
+
+
+shapes=("square", "triangle", "circle")
+
+
+list=colours+shapes
+
+paris_coord=(135, 156)
+
+print(list)
+
+
+
+
+
+DICTIONARIES IN PYTHON
+
+
+
+
+ONE WORD LINKED WITH MANY WORDS 
+
+DICTIONARIES IN PYTHON CAN STORE DIFFERENT TYPES OF DATA, COULD BE STRINGS/NUMBERS 
+YOU CAN STORE A NUMBER WITH A STRING AND VICA VERSA
+
+
+colours={   "B" : "blue",
+            "R" : "red",
+            "o" : "orange"
+
+}
+
+
+print(colours.get("o", "stop"))
+
+
+
+THIS IS THE DEFINITION OF A DICTIONARY IN  PYTHON
+
+
+
+names={    152: "name_A",
+           254: "name_B",
+           524: "name_C",
+           754: "name_D"
+
+
+}
+
+
+print(names.get(524, "This name doesn't exist"))
+
+
+
+
+UNDERSTANDING WHILE LOOPS
+
+
+variable_1=25
+variable_2=2000
+
+while variable_1<variable_2:
+    print(variable_1)
+    print("not good")
+
+THIS ONE JUST KEEPS PRINTING 25 + not good
+
+
+variable_1=25
+variable_2=2000
+
+while variable_1<variable_2:
+    print(variable_1)
+    print("not good")
+    variable_1=variable_1+5
+
+
+THIS ONE PRINTS ALL NUMBERS FROM 25 + 5 AN INFINITUM UNTIL 2000 (S0 HERE UNTIL 1995)
+
+
+
+
+
+UNDERSTANDING FOR LOOPS
+
+
+
+colors=["blue", "red", "orange", "black"]
+
+for one_color in colors:
+    print(one_color)
+
+
+
+
+for letter in "blue":
+    print(letter)
+
+
+
+
+
+
+colors=["black", "yellow", "green", "red"]
+for one_color in colors:
+    print(one_color)
+    if one_color=="red":
+        break
+
+
+
+for number in range(20, 30):
+    print(number)
+
+
+
+CREATING AND BLOCKING PASSWORDS
+
+
+our_password="pass123"
+your_answer=""
+number_of_tries=0
+number_of_max_tries=8
+max_tries="not reached"
+
+while your_answer!=our_password and max_tries!="reached":
+    if number_of_tries<number_of_max_tries:
+        your_answer=input("what is the password")
+        number_of_tries=number_of_tries+1
+    else:
+        max_tries="reached"
+
+if max_tries=="reached":
+    print("account blocked")
+else:
+    print("access granted")
+
+THIS ALLOWS USER TO ENTER 8 PASSWORDS WHICH THEN BLOCKS ANY MORE INPUTS, IF IT IS CORRECTLY ENTERED IT CONFIRMS BY SAYING "access granted"
+
+
+
+
+
+
+
+TESTING COMBINATIONS WITH LOOPS
+
+MEALS/DRINKS/DESSERTS AND USE THE FOR LOOP
+
+
+A NESTED LOOP = A LOOP WITHIN A LOOP
+
+
+meal=["pizza", "burger", "spaghetti"]
+drink=["water", "juice", "cordial"]
+dessert=["cake", "ice cream", "cupcakes"]
+
+
+for m in meal:
+    for d in drink:
+        for ds in dessert:
+            print("I will have " +m+ " as a meal " + "I also want " +d+ " as a drink and " +ds+ " as a dessert")
+
+
+
+
+
+
+
+
+CREATION OF A BASIC ENCRYPTION APP
+
+
+
+    for element in sentence:
+        if element in "Aa":
+            encryption=encryption+"!"
+        elif element in "Bb":
+                encryption=encryption + "£"
+        elif element in "Cc":
+                encryption=encryption + "$"
+        elif element in "Dd":
+                encryption=encryption + "%"
+        elif element in "Ee":
+                encryption=encryption + "&"
+
+        else:
+            encryption = encryption +element
+
+    return encryption
+
+print(encrypted(input("what do you want to encrypt? ")))
+
+
+    for element in sentence:
+        if element in "!":
+            encryption=encryption+"Aa"
+        elif element in "£":
+                encryption=encryption + "Bb"
+        elif element in "$":
+                encryption=encryption + "Cc"
+        elif element in "%":
+                encryption=encryption + "Dd"
+        elif element in "&":
+                encryption=encryption + "Ee"
+
+        else:
+            encryption = encryption +element
+
+    return encryption
+
+print(encrypted(input("what do you want to encrypt? ")))
+
+
+
+
+
+WORKING WITH CLASSES AND OBJECTS
+
+
+Project 1 Object (which is the personalised/specific details of the pizza, e.g. the large vegetarian pizza at $5)
+
+from Pizza import pizza1
+
+pizzaV=pizza1("vegetarian", 5, "small")
+pizzaP=pizza1("pepperoni", 10, "large")
+
+
+print(pizzaV.size)
+
+
+
+
+Class (which is the whole pizza)
+
+
+class pizza1:
+    def __init__(self,type,price,size):
+        self.type=type
+        self.price=price
+        self.size=size
+
+
+
+
+
+DEALING WITH ERRORS
+
+First type of error could be a Syntax error
+
+
+print(1/1).if 
+
+SyntaxError: invalid syntax
+
+
+print(1/0)
+
+ZeroDivisionError: division by zero   (an illogical error), logical exception
+
+
+
+
+a=int(input("enter number:  "))
+print(1+a)
+
+
+ValueError: invalid literal for int() with base 10: 't'
+
+
+
+
+TRY AND EXCEPT FUNCTION (use for when a user enters the incorrect information needed in an app)
+
+
+try:
+    a=int(input("enter number:  "))
+    print(1+a)
+except ValueError:
+    print("please write a number")
+
+
+
+
+
+answer=True
+
+if answer==True:
+    print("you guys are amazing")
+else:
+    print("")
+
+print("thank you :) ")
+
+
+
+
+
+
+
