@@ -1,0 +1,403 @@
+IDENTIFIERS
+
+1/
+
+@salary = 50000
+print(@salary)    <------ invalid syntax 
+
+
+1age = 10
+print(1age)       <------ invalid syntax 
+
+
+assert = 200
+print(assert)     <------ invalid syntax 
+
+
+import keyword
+print(keyword.kwlist)   <--------- prints key word list 
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+
+2/ 
+
+
+_salary = 50000
+print(_salary)      <--------- valid syntax 
+
+age1 = 12
+print(age1)         <--------- valid syntax 
+
+age1emp = 12
+print(age1emp)      <---------  valid syntax  
+
+
+
+
+DATA TYPES AND MEMORY LOCATION
+
+
+
+STRING
+
+3/
+
+s = "hello world"
+print(s)
+print(type(s))
+print("variable x is stored at memory location ", id(s))    <----- valid
+
+
+FLOAT 
+
+
+4/ 
+
+f = 11.11
+print(type(f))
+print(f)
+print("variable x is stored at memory location ", id (f))
+
+
+
+
+
+
+BOOLEAN
+
+5/ 
+
+b = True
+c = False
+print("value of b is",  b)
+print("datatype of b is ", type(b))
+print("\n")
+
+
+x=1
+y=4
+condition = x < y
+print(condition)
+print("datatype of condition is ", type(condition))     <----- valid 
+
+
+
+
+COMPLEX NUMBERS
+
+c = 1 + 4j
+print(c, "is a complex number. This sentence is", isinstance(c, complex))
+
+d = 11.1
+print(d, "is a complex number. This sentence is ",  isinstance(d, complex))
+
+
+
+Assignment
+
+
+z = "Simplified Machine Learning"
+print("z=", z)
+
+
+
+Is it possible to convert between data types?
+
+
+i = 100
+print(type(i))
+j = float(i)
+print(type(j))        #integer to float
+
+
+
+i = 555.555
+print(type(i))
+j = int(i)
+print(type(j))        #float to integer 
+print(j) 
+
+
+
+int('1000')           <------   compatible 
+
+int('One thousand')   <------   not compatible, a string should be compatible to convert to int or float 
+
+
+
+
+
+num = int('1000')
+print(num)
+
+print(int(1000))     <------  valid 
+
+
+
+
+Indentation and multiline statements 
+
+
+
+i =  1 + 2 \
++ 3 + 4 \
++ 5 + 6 \
++ 7 + 8
+
+i = 1 + 2 \
+    + 3 + 4 \
+    + 5 + 6 \
+    + 7 + 8
+
+for i in range(5):
+    print(i) 
+
+
+
+
+Comments and documentation strings
+
+# a hash will allow the user to add a comment Statement 
+
+""" """  Multiline comments start and end with triple double quotes
+
+'''  '''  Also, Multiline comments start and end with triple single quotes
+
+
+
+
+Function, documentation or Doc string 
+
+
+
+
+
+
+
+
+
+PYTHON BASICS II using Jupyter 
+
+
+n = input ("enter the number: ")
+
+
+
+enter the number: 100
+In [7]:
+
+
+i = 100; j = 200
+
+
+
+In [8]:
+
+
+print ("value of i is", i)
+
+
+
+value of i is 100
+In [9]:
+
+
+print ("value of i is {0} and j is {1}".format(i, j))
+
+
+
+value of i is 100 and j is 200
+In [10]:
+
+
+print ("value of i is {0} and j is {1}. Value of k is {k}" .format (i, j, k=300))
+​
+
+
+
+value of i is 100 and j is 200. Value of k is 300
+
+
+
+
+
+
+
+ARITHMETIC OPERATORS
+
+i = 100
+j = 200
+
+
+
+In [13]:
+
+
+i+j
+
+
+Out[13]:
+300
+In [14]:
+
+
+i-j
+
+
+Out[14]:
+-100
+In [15]:
+
+
+i*j
+
+
+Out[15]:
+20000
+In [16]:
+
+
+i/j
+
+
+Out[16]:
+0.5
+In [17]:
+
+
+i%j
+
+
+Out[17]:
+100
+In [18]:
+
+
+i//j
+
+
+Out[18]:
+0
+In [19]:
+
+
+i**j
+
+
+Out[19]:
+10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+
+COMPARISON OPERATORS 
+
+i = 100
+j = 200
+
+
+
+In [20]:
+
+
+i<j
+
+
+Out[20]:
+True
+In [21]:
+
+
+i>j
+
+
+Out[21]:
+False
+In [22]:
+
+
+i<=j
+
+
+Out[22]:
+True
+In [23]:
+
+
+i>=j
+
+
+Out[23]:
+False
+In [24]:
+
+
+i!=j
+
+
+Out[24]:
+True
+In [25]:
+
+
+i==j
+
+
+Out[25]:
+False
+
+
+
+
+
+
+LOGICAL OPERATORS
+
+
+i, j = True, False
+
+
+
+In [27]:
+
+
+i and j
+
+
+Out[27]:
+False
+In [28]:
+
+
+i or j 
+
+
+Out[28]:
+True
+In [29]:
+
+
+not j
+
+
+Out[29]:
+True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
