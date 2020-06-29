@@ -1,0 +1,65 @@
+Your Cloud Platform project in this session is set to cool-monolith-280109.
+Use “gcloud config set project [PROJECT_ID]” to change to a different project.
+s_wigglesworth@cloudshell:~ (cool-monolith-280109)$ git clone https://github.com/GoogleCloudPlatform/appengine-guestbook-python \
+>     && cd appengine-guestbook-python \
+>     && dev_appserver.py ./app.yaml
+Cloning into 'appengine-guestbook-python'...
+remote: Enumerating objects: 493, done.
+remote: Total 493 (delta 0), reused 0 (delta 0), pack-reused 493
+Receiving objects: 100% (493/493), 437.58 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (203/203), done.
+********************************************************************************
+Python 2 is deprecated. Upgrade to Python 3 as soon as possible.
+See https://cloud.google.com/python/docs/python2-sunset
+
+To suppress this warning, create an empty ~/.cloudshell/no-python-warning file.
+The command will automatically proceed in  seconds or on any key.
+********************************************************************************
+INFO     2020-06-19 15:38:57,206 devappserver2.py:289] Skipping SDK update check.
+WARNING  2020-06-19 15:38:57,425 simple_search_stub.py:1198] Could not read search indexes from /tmp/appengine.None.s_wigglesworth/search_indexes
+INFO     2020-06-19 15:38:57,427 api_server.py:282] Starting API server at: http://0.0.0.0:34491
+INFO     2020-06-19 15:38:57,435 dispatcher.py:267] Starting module "default" running at: http://0.0.0.0:8080
+INFO     2020-06-19 15:38:57,437 admin_server.py:150] Starting admin server at: http://0.0.0.0:8000
+INFO     2020-06-19 15:38:59,449 instance.py:294] Instance PID: 593
+INFO     2020-06-19 15:39:50,470 datastore_stub_index.py:330] Detected manual index.yaml, will not update
+INFO     2020-06-19 15:39:50,489 module.py:865] default: "GET /?authuser=0 HTTP/1.1" 200 2128
+INFO     2020-06-19 15:39:51,071 module.py:865] default: "GET /bootstrap/css/bootstrap.css HTTP/1.1" 200 127247
+INFO     2020-06-19 15:39:51,366 module.py:865] default: "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 200 22111
+INFO     2020-06-19 15:39:57,483 module.py:865] default: "POST /sign?guestbook_name=default_guestbook HTTP/1.1" 302 -
+INFO     2020-06-19 15:39:57,882 module.py:865] default: "GET /?guestbook_name=default_guestbook HTTP/1.1" 200 2305
+INFO     2020-06-19 15:39:58,360 module.py:865] default: "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 -
+INFO     2020-06-19 15:39:58,666 module.py:865] default: "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 304 -
+INFO     2020-06-19 15:40:16,218 module.py:865] default: "POST /sign?guestbook_name=default_guestbook HTTP/1.1" 302 -
+INFO     2020-06-19 15:40:16,602 module.py:865] default: "GET /?guestbook_name=default_guestbook HTTP/1.1" 200 2484
+INFO     2020-06-19 15:40:17,075 module.py:865] default: "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 304 -
+INFO     2020-06-19 15:40:17,433 module.py:865] default: "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 -
+INFO     2020-06-19 15:40:22,893 module.py:865] default: "GET /?guestbook_name=default_guestbook HTTP/1.1" 200 2484
+INFO     2020-06-19 15:40:23,345 module.py:865] default: "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 -
+INFO     2020-06-19 15:40:23,642 module.py:865] default: "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 304 -
+INFO     2020-06-19 15:40:28,381 module.py:865] default: "GET /?guestbook_name=default_guestbook HTTP/1.1" 200 2484
+INFO     2020-06-19 15:40:29,086 module.py:865] default: "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 304 -
+INFO     2020-06-19 15:40:29,091 module.py:865] default: "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 -
+ERROR    2020-06-19 15:40:33,117 webapp2.py:1552] ancestor cannot be an incomplete key
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1535, in __call__
+    rv = self.handle_exception(request, response, e)
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1529, in __call__
+    rv = self.router.dispatch(request, response)
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1278, in default_dispatcher
+return route.handler_adapter(request, response)
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1102, in __call__
+    return handler.dispatch()
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 572, in dispatch
+    return self.handle_exception(e, self.app.debug)
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 570, in dispatch
+    return method(*args, **kwargs)
+  File "/home/s_wigglesworth/appengine-guestbook-python/guestbook.py", line 71, in get
+    ancestor=guestbook_key(guestbook_name)).order(-Greeting.date)
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/google/appengine/ext/ndb/model.py", line 3435, in _query
+    qry = Query(kind=cls._get_kind(), **kwds)
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/google/appengine/ext/ndb/utils.py", line 160, in positional_wrapper
+    return wrapped(*args, **kwds)
+  File "/usr/lib/google-cloud-sdk/platform/google_appengine/google/appengine/ext/ndb/query.py", line 827, in __init__
+    raise ValueError('ancestor cannot be an incomplete key')
+ValueError: ancestor cannot be an incomplete key
+INFO     2020-06-19 15:40:33,137 module.py:865] default: "GET /?guestbook_name= HTTP/1.1" 500 2252
