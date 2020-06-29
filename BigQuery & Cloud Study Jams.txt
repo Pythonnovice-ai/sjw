@@ -1,0 +1,161 @@
+bq show bigquery-public-data:samples.shakespeare
+bq help query
+
+
+bq query --use_legacy_sql=false \
+'SELECT
+   word,
+   SUM(word_count) AS count
+ FROM
+   `bigquery-public-data`.samples.shakespeare
+ WHERE
+   word LIKE "%raisin%"
+ GROUP BY
+   word'
+
+
+
+bq query --use_legacy_sql=false \
+'SELECT
+  word
+FROM
+  `bigquery-public-data`.samples.shakespeare
+WHERE
+  word = "huzzah"'
+
+
+
+bq query --use_legacy_sql=false \
+'SELECT
+  word
+FROM
+  `bigquery-public-data`.samples.shakespeare
+WHERE
+  word = "doth"'
+
+
+
+bq ls
+
+
+bq query "SELECT name,count FROM babynames.names1984 WHERE gender = 'F' ORDER BY count ASC LIMIT 5"
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+ML Stages - all part of an independent system
+
+
+
+
+1. Data Ingestion 
+2. Data Analysis
+3. Data transformation
+4. Data valdiation
+5. Data splitting
+6. Trainer
+
+
+
+Jupyter - use to keep track of model data when you are training ML 
+A simple Python SDK 
+
+
+Spark - feature engineering - 
+
+loading into a data frame often means crashing 
+
+clone - edit - submit - radid readible experimentation
+
+CI/CD and CT FOR ML - continuous integration, continuous deployment
+
+A traditional ML WFlow =
+Data acquisition - exploration - prep - engineering - model selection - model training - hyper parameter tuning 
+
+MLOps Maturity levels
+0. manual - data prep, model building 
+1. ML pipeline automation - 
+2. CI/CD Pipeline - CI for models and pipelines, CD for models and pipelines, automated triggering, live monitoring of ML metrics. Chaallenges ? Requires MLOps capable eng team, frameworks and tools are not fully mature, complex...
+
+
+Can deploy on Kubernetes
+
+
+
+
+Hybrid Anthos AI 
+
+Enterprise challenge: how can I make faster impact on business using AI?
+
+Q&A
+
+1. How is your model behaving? Lots of infrastructure 
+2. Forecasts - sales numbers, such as a linear regression, deep neural networks, you could use BigQuery to do this. Or you could use Time series forecasting to create a new purchase order, by forecasting demand
+3. Possible to migrate SQL server on prem to BigQuery ?  
+
+
+
+2.  PUBLIC CRIME DATASET WITH BIGQUERY
+
+
+
+3. ML ENGINE IS A PLATFORM WHERE YOU DEPLOY MODELS 
+
+
+DataLab - deprecated, now ebracing Jupyter notebook (managed Jupyter notebook for AI)
+
+Data prep - for analysts, if you want to use data flow, parsing / processing before writing into bigquery, drag and drop workflows. Integrated into GCPs, not for those that are not engineers. There is a Quiklab for this!
+
+AI Light framework - It is a google product, Tensorflow 
+
+
+
+
+https://go.qwiklabs.com/cloud-study-jams-2020
+
+
+
+Click Settings and then take note of the host value in the kfp.Client() method. No need to write this down, but you will need to use this value in the example notebook to connect to your Kubeflow Pipelines environment ENDPOINT.
+
+
+pip3 install kfp --upgrade --user
+import kfp
+client = kfp.Client(host='72784496126f0aaf-dot-us-central2.pipelines.googleusercontent.com')
+client.list_pipelines()
+
+
+
+pipeline = kfp.Client().create_run_from_pipeline_func(pipeline, arguments={})
+
+# Run the pipeline on a separate Kubeflow Cluster instead
+# (use if your notebook is not running in Kubeflow - e.x. if using AI Platform Notebooks)
+# pipeline = kfp.Client(host='72784496126f0aaf-dot-us-central2.pipelines.googleusercontent.com').create_run_from_pipeline_func(pipeline, arguments={})
+
+
+# pipeline = kfp.Client().create_run_from_pipeline_func(pipeline, arguments={})
+
+# Run the pipeline on a separate Kubeflow Cluster instead
+# (use if your notebook is not running in Kubeflow - e.x. if using AI Platform Notebooks)
+pipeline = kfp.Client(host='72784496126f0aaf-dot-us-central2.pipelines.googleusercontent.com').create_run_from_pipeline_func(pipeline, arguments={})
+
+
+
+pipeline = kfp.Client().create_run_from_pipeline_func(pipeline, arguments={})
+pipeline = kfp.Client(host='72784496126f0aaf-dot-us-central2.pipelines.googleusercontent.com').create_run_from_pipeline_func(pipeline, arguments={})
+
+
+
+
+SECOND RUN
+
+
+
+jupyter@tensorflow-2-1-20200627-214318:~/pipelines$ gsutil mb -l ${REGION} gs://${PROJECT}
+Creating gs://qwiklabs-gcp-03-9cebc9364439/...
+
+
+import kfp
+client = kfp.Client(host='5ad1e1dd7826dea0-dot-us-central2.pipelines.googleusercontent.com')
+
+https://madewithml.com/

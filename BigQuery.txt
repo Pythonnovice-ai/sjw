@@ -1,0 +1,41 @@
+bq show bigquery-public-data:samples.shakespeare
+bq help query
+
+
+bq query --use_legacy_sql=false \
+'SELECT
+   word,
+   SUM(word_count) AS count
+ FROM
+   `bigquery-public-data`.samples.shakespeare
+ WHERE
+   word LIKE "%raisin%"
+ GROUP BY
+   word'
+
+
+
+bq query --use_legacy_sql=false \
+'SELECT
+  word
+FROM
+  `bigquery-public-data`.samples.shakespeare
+WHERE
+  word = "huzzah"'
+
+
+
+bq query --use_legacy_sql=false \
+'SELECT
+  word
+FROM
+  `bigquery-public-data`.samples.shakespeare
+WHERE
+  word = "doth"'
+
+
+
+bq ls
+
+
+bq query "SELECT name,count FROM babynames.names1984 WHERE gender = 'F' ORDER BY count ASC LIMIT 5"
