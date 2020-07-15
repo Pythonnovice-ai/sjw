@@ -1,0 +1,35 @@
+15/07/20
+
+Deployment ID
+Use this ID with the deployment API.
+
+Description: Head Deployment
+Deployment ID: AKfycbypeUdg8z-EkcoFckACGTTtkAnbhj8-sQd3dbP31gXc
+
+
+
+function createCardResponse(widgets) {
+  return {
+    "cards": [
+      {
+        "sections": [{
+          "widgets": widgets
+        }]
+    }]
+  };
+}
+
+function onMessage(e) {
+
+  var sourceText = e.message.argumentText;
+
+  var translatedText = "English:" + LanguageApp.translate(sourceText, 'pt', 'en');
+
+  var widgets = [{
+    "textParagraph": {
+      "text": translatedText}
+  }];
+
+  return createCardResponse(widgets);
+
+}
