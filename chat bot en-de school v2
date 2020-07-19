@@ -1,0 +1,25 @@
+function createCardResponse(widgets) {
+  return {
+    "cards": [
+      {
+        "sections": [{
+          "widgets": widgets
+        }]
+    }]
+  };
+}
+
+function onMessage(e) {
+
+  var sourceText = e.message.argumentText;
+
+  var translatedText = "German:" + LanguageApp.translate(sourceText, 'en', 'de');
+
+  var widgets = [{
+    "textParagraph": {
+      "text": translatedText}
+  }];
+
+  return createCardResponse(widgets);
+
+}
