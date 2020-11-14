@@ -1,0 +1,36 @@
+{
+  "output": {
+    "generic": [
+      {
+        "values": [
+          {
+            "text": "It’s a job I enjoy and am good at."
+          },
+          {
+            "text": "Because I have an important job looking after people."
+          },
+          {
+            "text": " So that you can be safely looked after when I am at work."
+          },
+          {
+            "text": " Yes, and it helps me to know that you are safe while I’m at work. "
+          },
+          {
+            "text": "I know it’s hard not seeing your friends. Teachers can help you keep a safe distance away from each other at school. The best way to reduce the number of people who get infected is to reduce mixing with people."
+          },
+          {
+            "text": " We don’t know but it won’t be forever. The government is talking to scientists to make decisions about when we can safely start ordinary life again."
+          },
+          {
+            "text": "Yes I’m as safe as anyone can be and I know what to do to keep myself safe at work."
+          },
+          {
+            "text": "It’s very unlikely that I will die but it’s possible I will get sick for a while."
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
+}
